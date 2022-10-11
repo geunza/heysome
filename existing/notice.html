@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>HEYSOME - NOTICE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Roboto:wght@500;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/swiper.8.0.7.min.css">
+    <link rel="stylesheet" href="css/cropper.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/page.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper.8.0.7.min.js"></script>
+    <script src="js/cropper.js"></script>
+    <script src="js/html2canvas.js"></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/photo.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="notice">
+            <header class="header">
+                <div class="header-main-inner inner">
+                    <a class="btn-logon" href="./signIn.html">login</a>
+                    <a class="btn-back" href="javascript:window.history.go(-1)">back</a>
+                    <button type="button" class="menu-btn menu-open">
+                        <span>Menu</span>
+                    </button>
+                    <div class="header-logo">
+                        <a href="/">
+                            <img src="./images/logo_black.png" alt="HEYSOME LOGO">
+                        </a>
+                    </div>
+                </div>
+                <div class="main-menu">
+                    <div class="menu-header">
+                        <div class="inner">
+                            <a class="btn_setting" href="###">Setting</a>
+                            <button type="button" class="menu-btn menu-close">
+                                <span>Close</span>
+                            </button>
+                            <div class="header-logo">
+                                <a href="/">
+                                    <img src="./images/logo_black.png" alt="HEYSOME LOGO">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_util">
+                        <ul class="btns inner">
+                            <li>
+                                <a href="###" class="imgArea ar"></a>
+                                <a href="###" class="txtArea">AR camera</a>
+                            </li>
+                            <li>
+                                <a href="./photo.html" class="imgArea photo"></a>
+                                <a href="./photo.html" class="txtArea">Photocard</a>
+                            </li>
+                            <li>
+                                <a href="./myImages.html" class="imgArea my"></a>
+                                <a href="./myImages.html" class="txtArea">My Image</a>
+                            </li>
+                            <li>
+                                <a href="./history.html" class="imgArea history"></a>
+                                <a href="./history.html" class="txtArea">구매내역</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="banner-wrap">
+                        <div class="inner">
+                            <div class="swiper-container swiper banner" style="width:100%;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="###"><img src="./images/banner/banner_01.png" alt=""></a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="###"><img src="./images/banner/banner_02.png" alt=""></a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="###"><img src="./images/banner/banner_01.png" alt=""></a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="###"><img src="./images/banner/banner_02.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <a href="./notice.html" class="btn_notice">
+                            사용방법 및 유의사항
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="notice-wrap inner">
+              <div class="notice-btns">
+                  <button type="button" data-tab="notice_use" class="tab-btn active">사용방법</button>
+                  <button type="button" data-tab="notice_notice" class="tab-btn">유의사항</button>
+              </div>
+              <div class="tab-content">
+                  <div class="tab-area notice_use active">
+                    <h4>포토카드</h4>
+                    <ul>
+                      <li>포토카드 구매는  최대 4매까지 구매가 가능합니다.  </li>
+                      <li>포토카드 템플릿 꾸미기는 photocard 버튼을 눌러 만들수있습니다.<br /> (포토카드 꾸미기는 모바일 앱 또는 모바일 웹 에서만 가능합니다.)</li>
+                      <li>포토카드 템플릿 꾸미기후 My Image에서 확인가능하며, 7일저장 가능하며 이후에는 확인이 불가 합니다. </li>
+                      <li>포토카드 꾸미기후 결제한 내역은  구매내역에서 확인가능하며, 프린트도 가능합니다.</li>
+                      <li>포토카드는 해당 점포의 포토카드 발권기에서 인증번호 입력후 출력이 가능하합니다.</li>
+                    </ul>
+                    <h4>AR 포토카드</h4>
+                    <ul>
+                      <li>내용무</li>
+                    </ul>
+                  </div>
+                  <div class="tab-area notice_notice">
+                    <h4>취소/환불</h4>
+                    <ul>
+                      <li>포토카드는 출력 이 후 환불 및 교환이 불가능합니다. <br />(단, 품질불량의 사유일 경우 1회 재출력이 가능하며, 1회 이 후에도 품질불량일 경우 현장에서 포토카드 회수 후 취소 및 환불이 가능합니다.)</li>
+                      <li>포토카드 출력 전 일 경우 구매일로부터 14일까지 취소가 가능합니다.</li>
+                      <li>구매취소는 취소기한 내 구매내역에서 취소가 가능합니다. (현장환불 불가)</li>
+                    </ul>
+                    <h4>기타</h4>
+                    <ul>
+                      <li>포토카드 구매내역은 전체메뉴 > 구매내역에서 확인가능합니다.</li>
+                      <li>포토카드 꾸미기는 모바일 앱 및 모바일 웹에서만 가능합니다.</li>
+                      <li>고객센터 : 02-6956-1325 (월-금: 10AM - 6PM)</li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+            <!-- <div class="footer">
+  <ul>
+    <li>
+                        <a href="./ar.html">
+        <div class="imgArea btn-ar">
+          
+        </div>
+        <span>AR Camera</span>
+      </a>
+    </li>
+    <li>
+      <a href="./photo.html">
+        <div class="imgArea btn-photo">
+
+        </div>
+        <span>Photocard</span>
+      </a>
+    </li>
+    <li>
+      <a href="./myImages.html">
+        <div class="imgArea btn-my">
+          <span class="numb">2</span>
+        </div>
+        <span>My Image</span>
+      </a>
+    </li>
+  </ul>
+</div> -->
+        </div>
+    </div>
+</body>
+</html>

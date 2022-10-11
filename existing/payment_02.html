@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>HEYSOME - PAYMENT02</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Roboto:wght@500;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/swiper.8.0.7.min.css">
+    <link rel="stylesheet" href="css/cropper.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/page.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper.8.0.7.min.js"></script>
+    <script src="js/cropper.js"></script>
+    <script src="js/html2canvas.js"></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/photo.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="payment">
+            <header class="header">
+                <div class="header-main-inner inner">
+                    <a class="btn-logon" href="./signIn.html">login</a>
+                    <a class="btn-back" href="javascript:window.history.go(-1)">back</a>
+                    <button type="button" class="menu-btn menu-open">
+                        <span>Menu</span>
+                    </button>
+                    <div class="header-logo">
+                        <a href="/">
+                            <img src="./images/logo_black.png" alt="HEYSOME LOGO">
+                        </a>
+                    </div>
+                </div>
+                <div class="main-menu">
+                    <div class="menu-header">
+                        <div class="inner">
+                            <a class="btn_setting" href="###">Setting</a>
+                            <button type="button" class="menu-btn menu-close">
+                                <span>Close</span>
+                            </button>
+                            <div class="header-logo">
+                                <a href="/">
+                                    <img src="./images/logo_black.png" alt="HEYSOME LOGO">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_util">
+                        <ul class="btns inner">
+                            <li>
+                                <a href="###" class="imgArea ar"></a>
+                                <a href="###" class="txtArea">AR camera</a>
+                            </li>
+                            <li>
+                                <a href="./photo.html" class="imgArea photo"></a>
+                                <a href="./photo.html" class="txtArea">Photocard</a>
+                            </li>
+                            <li>
+                                <a href="./myImages.html" class="imgArea my"></a>
+                                <a href="./myImages.html" class="txtArea">My Image</a>
+                            </li>
+                            <li>
+                                <a href="./history.html" class="imgArea history"></a>
+                                <a href="./history.html" class="txtArea">구매내역</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="banner-wrap">
+                        <div class="inner">
+                            <div class="swiper-container swiper banner" style="width:100%;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="###"><img src="./images/banner/banner_01.png" alt=""></a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="###"><img src="./images/banner/banner_02.png" alt=""></a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="###"><img src="./images/banner/banner_01.png" alt=""></a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="###"><img src="./images/banner/banner_02.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <a href="./notice.html" class="btn_notice">
+                            사용방법 및 유의사항
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="payment-wrap payment-wrap2 inner">
+                <div class="inform">
+                    <h4>결제완료</h4>
+                    <div class="box">
+                        <div class="topArea">
+                            <p>
+                                <span>수량</span>
+                                <span>2</span>
+                            </p>
+                            <p>
+                                <span>가격</span>
+                                <span>5,000</span>
+                            </p>
+                        </div>
+                        <p class="final">
+                            <span>최종 결제 금액</span>
+                            <span class="price">10,000</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="numb">
+                    <h4>인증번호</h4>
+                    <div class="box">
+                      365896
+                    </div>
+                    <p>
+                      <span>위의 인증번호를 키오스크에 입력하여 주세요.</span>
+                      <span>비회원은 인증번호 저장되지않습니다.</span>
+                    </p>
+                </div>
+                <div class="line innerBreak">
+                </div>
+                <div class="confirm">
+                    <p>인증번호는 구매 내역에서도 확인 가능합니다.</p>
+                    <a href="./payment_02.html" class="payment_submit">
+                        <img src="images/btn/btn_search_black_02.png" alt="search icon">
+                        <span>인증번호 확인하기</span>
+                    </a>
+                    <div class="btns">
+                      <a href="./photo.html">
+                        <img src="images/btn/qty_up_black.png" alt="plus icon">
+                        <span>새로 만들기</span>
+                      </a>
+                      <a href="./myImages.html">
+                        <img src="images/btn/btn_time.png" alt="clock icon">
+                        <span>최근 저장된</span>
+                      </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <ul>
+                <li>
+                    <a href="./ar.html">
+                    <div class="imgArea btn-ar">
+                        
+                    </div>
+                    <span>AR Camera</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./photo.html">
+                    <div class="imgArea btn-photo">
+
+                    </div>
+                    <span>Photocard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./myImages.html">
+                    <div class="imgArea btn-my">
+                        <span class="numb">2</span>
+                    </div>
+                    <span>My Image</span>
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
