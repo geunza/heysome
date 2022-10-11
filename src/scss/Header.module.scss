@@ -1,0 +1,58 @@
+@import "./var";
+
+.header {
+  padding: 30px 0 20px;
+  position: relative;
+  z-index: 3;
+  background-color: $white-color;
+  border-bottom: 1px solid #e8e8e8;
+  flex: 0 1 auto;
+  .headerMainInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    .btnLogon {
+      // display: none;
+      color: $black-color;
+      border: 1px solid $black-text;
+      line-height: 26px;
+      font-family: $font-man;
+      font-weight: 900;
+      padding: 0 10px;
+      border-radius: 15px;
+    }
+    .btnBack {
+      width: 25px;
+      height: 100%;
+      background: url("/resources/img/Header/btn_back.png") no-repeat left
+        center/auto 15px;
+      font-size: 0;
+      text-indent: -9999px;
+    }
+  }
+  .headerLogo {
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateX(15px);
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .menuBtn {
+    background: transparent;
+    border: none;
+    span {
+      display: block;
+      color: $black-text;
+      font-family: $font-man;
+      font-weight: 600;
+      font-size: 11px;
+      padding-bottom: 3px;
+      border-bottom: 2px solid $black-text;
+    }
+  }
+}

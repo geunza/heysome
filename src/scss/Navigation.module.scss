@@ -1,0 +1,56 @@
+@import "./var";
+
+.footer {
+  background: white;
+  padding: 15px 0 20px;
+  z-index: 5;
+  flex: 0 1 auto;
+  ul {
+    display: flex;
+    li {
+      width: 33.33%;
+      position: relative;
+      text-align: center;
+      a {
+        display: block;
+        font-family: $font-man;
+        font-weight: 500;
+        color: $black-text;
+        .imgArea {
+          background: url("") no-repeat center/ contain;
+          width: 35px;
+          height: 35px;
+          margin: 0 auto 10px;
+          &.btnAr {
+            background-image: url("/resources/img/Navigation/btn_ar.png");
+          }
+          &.btnPhoto {
+            background-image: url("/resources/img/Navigation/btn_photo.png");
+          }
+          &.btnMy {
+            background-image: url("/resources/img/Navigation/btn_my.png");
+            position: relative;
+            .numb {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              width: 20px;
+              height: 20px;
+              background: $main-color;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-family: $font-man;
+              font-weight: 600;
+              font-size: 12px;
+            }
+          }
+        }
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
