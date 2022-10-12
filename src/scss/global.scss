@@ -23,6 +23,9 @@ select {
 }
 .inner {
   padding: 0 20px;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
 }
 .innerBreak {
   margin: 0 -20px;
@@ -34,6 +37,7 @@ select {
   height: 100vh;
   & > div:not([class^="Header"]):not([class^="Navigation"]) {
     flex: 1 1 auto;
+    overflow-y: hidden;
   }
 }
 

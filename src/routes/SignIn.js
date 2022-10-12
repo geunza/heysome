@@ -1,5 +1,5 @@
 import React from "react";
-const SignIn = () => {
+const SignIn = ({ setHeaderOn }) => {
   return (
     <>
       <div>SIGNIN</div>

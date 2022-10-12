@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from "react";
 import AppRouter from "components/Router";
-import Header from "components/Header";
-import Navigation from "components/Navigation";
 import "scss/reset.scss";
 import "scss/global.scss";
+import "scss/custom.scss";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [myImage, setMyImage] = useState([]);
+  useEffect(() => {
+    setMyImage(["a", "b", "c"]);
+  }, []);
   return (
     <>
-      <AppRouter isLoggedIn={isLoggedIn} />
+      <AppRouter isLoggedIn={isLoggedIn} myImage={myImage} />
     </>
   );
 }

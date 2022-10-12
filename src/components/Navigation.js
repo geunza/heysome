@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "scss/Navigation.module.scss";
-const Footer = () => {
+import MyImages from "./MyImages";
+const Footer = ({ myImage }) => {
   return (
     <div className={styles.footer}>
       <ul>
@@ -20,7 +21,7 @@ const Footer = () => {
         <li>
           <Link to="/myImages">
             <div className={`${styles.imgArea} ${styles.btnMy}`}>
-              <span className={styles.numb}>2</span>
+              <span className={styles.numb}>{myImage.length}</span>
             </div>
             <span>My Image</span>
           </Link>
