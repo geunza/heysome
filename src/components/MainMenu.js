@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "resources/img/logo_black.png";
+import logo from "assets/img/logo_black.png";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
@@ -86,12 +86,12 @@ const MainMenu = ({ menuOpen, styles }) => {
             className={styles.menuVisual}
             style={{ width: "100%" }}
           >
-            {banner.map((v) => {
+            {banner.map((v, i) => {
               return (
-                <SwiperSlide key={v.img} className={`${styles.swiperSlide}`}>
+                <SwiperSlide key={i} className={`${styles.swiperSlide}`}>
                   <Link to={`${v.link}`}>
                     <img
-                      src={require(`resources/img/MainMenu/${v.img}`)}
+                      src={require(`assets/img/MainMenu/${v.img}`)}
                       alt={v.alt}
                     />
                   </Link>

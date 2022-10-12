@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "scss/Navigation.module.scss";
-import MyImages from "./MyImages";
-const Footer = ({ myImage }) => {
+const Footer = ({ userImages, headerOn }) => {
   return (
-    <div className={styles.footer}>
+    <div
+      className={styles.footer}
+      style={{ display: headerOn ? "block" : "none" }}
+    >
       <ul>
         <li>
           <Link to="/ar">
@@ -21,7 +23,7 @@ const Footer = ({ myImage }) => {
         <li>
           <Link to="/myImages">
             <div className={`${styles.imgArea} ${styles.btnMy}`}>
-              <span className={styles.numb}>{myImage.length}</span>
+              <span className={styles.numb}>{userImages.length}</span>
             </div>
             <span>My Image</span>
           </Link>

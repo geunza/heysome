@@ -26,7 +26,7 @@
     .btnBack {
       width: 25px;
       height: 100%;
-      background: url("/resources/img/Header/btn_back.png") no-repeat left
+      background: url("/assets/img/Header/btn_back.png") no-repeat left
         center/auto 15px;
       font-size: 0;
       text-indent: -9999px;
@@ -117,7 +117,7 @@
     .btnSetting {
       width: 25px;
       height: 100%;
-      background: url("/resources/img/MainMenu/btn_setting.png") no-repeat left
+      background: url("/assets/img/MainMenu/btn_setting.png") no-repeat left
         center/contain;
       font-size: 0;
       text-indent: -9999px;
@@ -138,16 +138,16 @@
           border-radius: 10px;
           margin-bottom: 10px;
           &.ar {
-            background-image: url("/resources/img/MainMenu/btn_ar.png");
+            background-image: url("/assets/img/MainMenu/btn_ar.png");
           }
           &.photo {
-            background-image: url("/resources/img/MainMenu/btn_photo.png");
+            background-image: url("/assets/img/MainMenu/btn_photo.png");
           }
           &.my {
-            background-image: url("/resources/img/MainMenu/btn_my.png");
+            background-image: url("/assets/img/MainMenu/btn_my.png");
           }
           &.history {
-            background-image: url("/resources/img/MainMenu/btn_history.png");
+            background-image: url("/assets/img/MainMenu/btn_history.png");
           }
         }
         .txtArea {

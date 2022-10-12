@@ -21,6 +21,10 @@ button,
 select {
   font-family: inherit;
 }
+button {
+  background: transparent;
+  border: none;
+}
 .inner {
   padding: 0 20px;
   position: relative;
@@ -37,7 +41,7 @@ select {
   height: 100vh;
   & > div:not([class^="Header"]):not([class^="Navigation"]) {
     flex: 1 1 auto;
-    overflow-y: hidden;
+    overflow-y: auto;
   }
 }
 

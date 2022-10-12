@@ -6,35 +6,36 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
-import Home from "routes/Home";
-import SignIn from "routes/SignIn";
+import Home from "pages/Home";
+import SignIn from "pages/SignIn";
 import Header from "components/Header";
 import Navigation from "components/Navigation";
-import Ar from "./Ar";
-import MyImages from "./MyImages";
-import Photo from "./Photo";
-const AppRouter = ({ isLoggedIn, myImage }) => {
-  const [headerOn, setHeaderOn] = useState("none");
-  useEffect(() => {
-    console.log(headerOn);
-  }, [headerOn]);
+import Ar from "pages/Ar";
+import MyImages from "pages/MyImages";
+import Photo from "pages/Photo";
+const AppRouter = ({ isLoggedIn, userImages }) => {
+  const [headerOn, setHeaderOn] = useState(true);
   return (
     <div id="wrap">
       <Router>
         <Header
           isLoggedIn={isLoggedIn}
+          headerOn={headerOn}
           setHeaderOn={setHeaderOn}
-          style={{ display: headerOn ? "block" : "none" }}
         />
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/photo" element={<Photo />}></Route>
           <Route exact path="/signIn" element={<SignIn />}></Route>
-          <Route exact path="/myImages" element={<MyImages />}></Route>
+          <Route
+            exact
+            path="/myImages"
+            element={<MyImages userImages={userImages} />}
+          ></Route>
           <Route exact path="/ar" element={<Ar />}></Route>
           <Route path="*" element={<Navigate replace to="/" />}></Route>
         </Routes>
-        <Navigation myImage={myImage} />
+        <Navigation userImages={userImages} headerOn={headerOn} />
       </Router>
     </div>
   );

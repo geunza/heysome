@@ -1,44 +1,60 @@
 {
   "data": [
     {
-      "date": "20221012",
-      "image": "resources/dummy/myImages/myImage_01.png"
+      "date": "2022-10-17",
+      "image": [
+        "assets/dummy/myImages/myImage_01.png",
+        "assets/dummy/myImages/myImage_02.png"
+      ]
     },
     {
-      "date": "20221012",
-      "image": "resources/dummy/myImages/myImage_02.png"
+      "date": "2022-10-16",
+      "image": [
+        "assets/dummy/myImages/myImage_01.png",
+        "assets/dummy/myImages/myImage_02.png",
+        "assets/dummy/myImages/myImage_01.png"
+      ]
     },
     {
-      "date": "20221012",
-      "image": "resources/dummy/myImages/myImage_01.png"
+      "date": "2022-10-14",
+      "image": [
+        "assets/dummy/myImages/myImage_01.png",
+        "assets/dummy/myImages/myImage_02.png",
+        "assets/dummy/myImages/myImage_01.png",
+        "assets/dummy/myImages/myImage_02.png",
+        "assets/dummy/myImages/myImage_01.png",
+        "assets/dummy/myImages/myImage_02.png"
+      ]
     },
     {
-      "date": "20221012",
-      "image": "resources/dummy/myImages/myImage_02.png"
+      "date": "2022-10-12",
+      "image": [
+        "assets/dummy/myImages/myImage_01.png",
+        "assets/dummy/myImages/myImage_02.png"
+      ]
     },
     {
-      "date": "20221011",
-      "image": "resources/dummy/myImages/myImage_01.png"
+      "date": "2022-10-11",
+      "image": [
+        "assets/dummy/myImages/myImage_01.png",
+        "assets/dummy/myImages/myImage_01.png",
+        "assets/dummy/myImages/myImage_02.png"
+      ]
     },
     {
-      "date": "20221010",
-      "image": "resources/dummy/myImages/myImage_02.png"
+      "date": "2022-10-10",
+      "image": [
+        "assets/dummy/myImages/myImage_01.png",
+        "assets/dummy/myImages/myImage_01.png",
+        "assets/dummy/myImages/myImage_02.png"
+      ]
     },
     {
-      "date": "20221010",
-      "image": "resources/dummy/myImages/myImage_01.png"
-    },
-    {
-      "date": "20221010",
-      "image": "resources/dummy/myImages/myImage_02.png"
-    },
-    {
-      "date": "20221019",
-      "image": "resources/dummy/myImages/myImage_01.png"
-    },
-    {
-      "date": "20221019",
-      "image": "resources/dummy/myImages/myImage_02.png"
+      "date": "2022-10-08",
+      "image": [
+        "assets/dummy/myImages/myImage_01.png",
+        "assets/dummy/myImages/myImage_02.png"
+      ]
     }
   ]
 }

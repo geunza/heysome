@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link, Navigate, useNavigate, useLocation } from "react-router-dom";
 import MainMenu from "components/MainMenu";
 import styles from "scss/Header.module.scss";
-import logo from "resources/img/logo_black.png";
-const Header = ({ isLoggedIn, setHeaderOn }) => {
+import logo from "assets/img/logo_black.png";
+const Header = ({ isLoggedIn, setHeaderOn, headerOn }) => {
   const navigate = useNavigate();
   const path = useLocation().pathname;
   const [onMenu, setOnMenu] = useState(false);
@@ -14,12 +14,14 @@ const Header = ({ isLoggedIn, setHeaderOn }) => {
   useEffect(() => {
     // path변경시
     setOnMenu(false);
-    console.log(path);
     NOGLOBAL.includes(path) ? setHeaderOn(false) : setHeaderOn(true);
   }, [path]);
   return (
     <>
-      <header className={styles.header}>
+      <header
+        className={styles.header}
+        style={{ display: headerOn ? "block" : "none" }}
+      >
         <div className={`${styles.headerMainInner} inner`}>
           {path == "/" ? (
             !isLoggedIn ? (

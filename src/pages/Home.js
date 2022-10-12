@@ -32,7 +32,7 @@ const Home = () => {
           return (
             <SwiperSlide key={v.img} className={`${styles.swiperSlide}`}>
               <Link to={`${v.link}`}>
-                <img src={require(`resources/img/Home/${v.img}`)} alt={v.alt} />
+                <img src={require(`assets/img/Home/${v.img}`)} alt={v.alt} />
               </Link>
             </SwiperSlide>
           );
