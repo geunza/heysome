@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import logo from "assets/img/logo_black.png";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -79,10 +79,15 @@ const MainMenu = ({ menuOpen, styles }) => {
       <div className={styles.bannerWrap}>
         <div className="inner">
           <Swiper
+            spaceBetween={20}
             pagination={{
               el: ".mainMenuSwiperPagination",
             }}
-            modules={[Pagination]}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            modules={[Pagination, Autoplay]}
             className={styles.menuVisual}
             style={{ width: "100%" }}
           >

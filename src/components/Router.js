@@ -7,12 +7,13 @@ import {
   useLocation,
 } from "react-router-dom";
 import Home from "pages/Home";
-import SignIn from "pages/SignIn";
 import Header from "components/Header";
 import Navigation from "components/Navigation";
 import Ar from "pages/Ar";
 import MyImages from "pages/MyImages";
 import Photo from "pages/Photo";
+import Notice from "pages/Notice";
+import Account from "pages/Account";
 const AppRouter = ({ isLoggedIn, userImages }) => {
   const [headerOn, setHeaderOn] = useState(true);
   return (
@@ -26,7 +27,8 @@ const AppRouter = ({ isLoggedIn, userImages }) => {
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/photo" element={<Photo />}></Route>
-          <Route exact path="/signIn" element={<SignIn />}></Route>
+          <Route exact path="/notice" element={<Notice />}></Route>
+          <Route exact path="/account/:id" element={<Account />}></Route>
           <Route
             exact
             path="/myImages"

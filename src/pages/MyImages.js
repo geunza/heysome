@@ -4,9 +4,6 @@ import { Link } from "react-router-dom";
 import Image from "components/Image";
 const MyImages = ({ userImages }) => {
   const [clicked, setClicked] = useState([]);
-  useEffect(() => {
-    console.log(clicked);
-  }, [clicked]);
   return (
     <div id={styles.MyImages}>
       <div className="inner">
@@ -24,8 +21,10 @@ const MyImages = ({ userImages }) => {
                     return (
                       <Image
                         styles={styles}
+                        key={img.id}
+                        date={v.date}
                         img={img}
-                        idx={idx}
+                        clicked={clicked}
                         setClicked={setClicked}
                       />
                     );

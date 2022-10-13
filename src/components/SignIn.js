@@ -1,9 +1,10 @@
 import React from "react";
-const SignIn = ({ setHeaderOn }) => {
+const SignIn = () => {
   return (
     <>
-      <div>SIGNIN</div>
+      <div id="SignIn">SignIn</div>
     </>
   );
 };
+
 export default SignIn;

@@ -5,12 +5,12 @@ import styles from "scss/Header.module.scss";
 import logo from "assets/img/logo_black.png";
 const Header = ({ isLoggedIn, setHeaderOn, headerOn }) => {
   const navigate = useNavigate();
-  const path = useLocation().pathname;
+  const path = useLocation().pathname.split("/")[1];
   const [onMenu, setOnMenu] = useState(false);
   const menuOpen = () => {
     setOnMenu((prev) => !prev);
   };
-  const NOGLOBAL = ["/signIn", "/signOut1"];
+  const NOGLOBAL = ["account"];
   useEffect(() => {
     // path변경시
     setOnMenu(false);
@@ -23,9 +23,9 @@ const Header = ({ isLoggedIn, setHeaderOn, headerOn }) => {
         style={{ display: headerOn ? "block" : "none" }}
       >
         <div className={`${styles.headerMainInner} inner`}>
-          {path == "/" ? (
+          {path == "" ? (
             !isLoggedIn ? (
-              <Link className={styles.btnLogon} to="/signIn">
+              <Link className={styles.btnLogon} to="/account/signIn">
                 login
               </Link>
             ) : (

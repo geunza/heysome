@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 import { Link } from "react-router-dom";
 import styles from "scss/Home.module.scss";
 import "swiper/css";
@@ -24,8 +24,11 @@ const Home = () => {
           el: ".swiperPagination",
           type: "fraction",
         }}
+        autoplay={{
+          delay: 2000,
+        }}
         navigation={true}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         className={styles.mainVisual}
       >
         {banner.map((v) => {

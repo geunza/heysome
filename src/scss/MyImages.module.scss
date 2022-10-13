@@ -56,6 +56,9 @@
           .imgArea {
             border-radius: 3px;
             overflow: hidden;
+            img {
+              user-select: none;
+            }
           }
         }
       }

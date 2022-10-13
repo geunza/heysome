@@ -1,8 +1,10 @@
+import React from "react";
 const SignUp = () => {
   return (
     <>
-      <div>SignUp</div>
+      <div id="SignUp">SignUp</div>
     </>
   );
 };
+
 export default SignUp;

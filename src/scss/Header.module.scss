@@ -81,9 +81,12 @@
   .bannerWrap {
     padding: 20px 0;
     .menuVisual {
-      border-radius: 10px;
       img {
         width: 100%;
+      }
+      :global .swiper-slide {
+        border-radius: 10px;
+        overflow: hidden;
       }
       .mainMenuSwiperPagination {
         position: static;
