@@ -14,6 +14,7 @@ import MyImages from "pages/MyImages";
 import Photo from "pages/Photo";
 import Notice from "pages/Notice";
 import Account from "pages/Account";
+import History from "pages/History";
 const AppRouter = ({ isLoggedIn, userImages }) => {
   const [headerOn, setHeaderOn] = useState(true);
   return (
@@ -28,6 +29,7 @@ const AppRouter = ({ isLoggedIn, userImages }) => {
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/photo" element={<Photo />}></Route>
           <Route exact path="/notice" element={<Notice />}></Route>
+          <Route exact path="/history" element={<History />}></Route>
           <Route exact path="/account/:id" element={<Account />}></Route>
           <Route
             exact

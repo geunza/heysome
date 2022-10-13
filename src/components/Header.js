@@ -50,7 +50,9 @@ const Header = ({ isLoggedIn, setHeaderOn, headerOn }) => {
             </Link>
           </div>
         </div>
-        {onMenu ? <MainMenu menuOpen={menuOpen} styles={styles} /> : null}
+        {onMenu ? (
+          <MainMenu menuOpen={menuOpen} setOnMenu={setOnMenu} styles={styles} />
+        ) : null}
       </header>
     </>
   );

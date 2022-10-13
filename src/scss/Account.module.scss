@@ -1,0 +1,71 @@
+@import "var";
+#AccountTop {
+  height: 100%;
+  padding: 3% 0 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  background: $main-color;
+  .accountSwiper {
+    height: 100%;
+    .wayTitle {
+      color: #191919;
+      border: 1px solid #191919;
+      margin-bottom: 15px;
+      border-radius: 20px;
+      padding: 5px 10px;
+    }
+    .swiperSlide {
+      .inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        height: 100%;
+      }
+      ul {
+        display: flex;
+        justify-content: space-around;
+        li {
+          width: 25%;
+          text-align: center;
+          flex-grow: 1;
+          &.arr {
+            width: 12%;
+            background: url("/assets/img/AccountTop/ico_arr.png") no-repeat
+              center/auto 30px;
+          }
+          img {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .accountSwiperPagination {
+      bottom: 5px;
+      transform: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      :global .swiper-pagination-bullet {
+        display: block;
+        border: 1px solid #000;
+        background: transparent;
+        margin: 0;
+      }
+      :global .swiper-pagination-bullet-active {
+        background: #000;
+      }
+    }
+  }
+}
+
+#AccountBottom {
+  height: 60%;
+  background: #000;
+  color: #fff;
+  padding: 5% 0;
+}

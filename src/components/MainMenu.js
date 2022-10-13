@@ -67,7 +67,7 @@ const MainMenu = ({ menuOpen, styles }) => {
           </li>
           <li>
             <Link
-              to="/myImages"
+              to="/history"
               className={`${styles.imgArea} ${styles.history}`}
             ></Link>
             <Link to="/history" className={styles.txtArea}>
