@@ -30,7 +30,10 @@ const AppRouter = ({ isLoggedIn, userImages }) => {
           <Route exact path="/photo" element={<Photo />}></Route>
           <Route exact path="/notice" element={<Notice />}></Route>
           <Route exact path="/history" element={<History />}></Route>
-          <Route exact path="/account/:id" element={<Account />}></Route>
+          <Route
+            path="/account/:id"
+            element={<Account isLoggedIn={isLoggedIn} />}
+          ></Route>
           <Route
             exact
             path="/myImages"

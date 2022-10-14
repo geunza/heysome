@@ -3,12 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import way1 from "assets/img/AccountTop/way_01.png";
-import way2 from "assets/img/AccountTop/way_02.png";
-import way3 from "assets/img/AccountTop/way_03.png";
-import way4 from "assets/img/AccountTop/way_04.png";
-import way5 from "assets/img/AccountTop/way_05.png";
-import way6 from "assets/img/AccountTop/way_06.png";
+import way1 from "assets/img/Account/way_01.png";
+import way2 from "assets/img/Account/way_02.png";
+import way3 from "assets/img/Account/way_03.png";
+import way4 from "assets/img/Account/way_04.png";
+import way5 from "assets/img/Account/way_05.png";
+import way6 from "assets/img/Account/way_06.png";
 const AccountTop = ({ styles }) => {
   return (
     <>

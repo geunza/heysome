@@ -33,7 +33,7 @@
           flex-grow: 1;
           &.arr {
             width: 12%;
-            background: url("/assets/img/AccountTop/ico_arr.png") no-repeat
+            background: url("/assets/img/Account/ico_arr.png") no-repeat
               center/auto 30px;
           }
           img {
@@ -68,4 +68,179 @@
   background: #000;
   color: #fff;
   padding: 5% 0;
+  display: flex;
+  overflow-y: auto;
+  .inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    > div {
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+    }
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex: 0 1 auto;
+    font-weight: 400;
+    span {
+      font-size: 22px;
+    }
+    a {
+      color: $main-color;
+      border: 1px solid $main-color;
+      border-radius: 20px;
+      padding: 5px 10px;
+      font-weight: 200;
+    }
+  }
+  fieldset {
+    > * {
+      margin-bottom: 10px;
+    }
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    background: transparent;
+    border-color: $main-color;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    background: transparent;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+  #signIn {
+    .autoSignIn {
+      margin-top: 10px;
+      input[type="checkbox"] {
+        & + label {
+          &:before {
+            content: "";
+            display: inline-block;
+            min-width: 20px;
+            width: 20px;
+            height: 20px;
+            border: 1px solid $main-color;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-right: 10px;
+            box-sizing: border-box;
+          }
+          span {
+            vertical-align: middle;
+          }
+        }
+        &:checked + label:before {
+          background: $main-color url("/assets/img/Account/ico_check.png")
+            no-repeat center/auto 10px;
+        }
+      }
+    }
+    .btnSubmit {
+      color: #000000;
+      background: $main-color;
+      display: block;
+      text-align: center;
+      line-height: 45px;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: 16px;
+      width: 100%;
+      border: none;
+      margin: 15px 0;
+    }
+    .findAccount {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 25px;
+      a {
+        color: #ffffff;
+        padding: 4px 20px;
+      }
+    }
+    .socialSignIn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        color: $main-color;
+        border: 1px solid $main-color;
+        border-radius: 30px;
+        padding: 15px 0;
+      }
+    }
+  }
+  #SignUp {
+    input[type="checkbox"] {
+      display: none;
+      & + label {
+        &:before {
+          content: "";
+          display: inline-block;
+          min-width: 20px;
+          width: 20px;
+          height: 20px;
+          border: 1px solid $main-color;
+          border-radius: 5px;
+          vertical-align: middle;
+          margin-right: 10px;
+          box-sizing: border-box;
+        }
+        span {
+          vertical-align: middle;
+        }
+      }
+      &:checked + label:before {
+        background: $main-color url("/assets/img/Account/ico_check.png")
+          no-repeat center/auto 10px;
+      }
+    }
+    .chkList {
+      border-width: 1px 0;
+      border-color: #ebdd02;
+      border-style: solid;
+      padding: 3% 0;
+      .chkItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        &:not(:last-child) {
+          margin: 10px 0 3%;
+        }
+        &:last-child {
+          margin: 10px 0 0;
+        }
+
+        .more {
+          width: 20px;
+          height: 20px;
+          min-width: 20px;
+          background: url("/assets/img/Account/ico_more.png") no-repeat
+            center/contain;
+          border: none;
+          font-size: 0;
+          text-indent: -999px;
+          overflow: hidden;
+        }
+        .desc {
+          color: #797979;
+          font-size: 12px;
+          padding: 5px 0 5px 30px;
+        }
+      }
+    }
+  }
 }

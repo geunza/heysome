@@ -1,17 +1,22 @@
-import React, { useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import AccountTop from "components/AccountTop";
 import SignUp from "components/SignUp";
 import SignIn from "components/SignIn";
 import FindPassword from "components/FindPassword";
 import FindAccount from "components/FindAccount";
 import styles from "scss/Account.module.scss";
-const Account = () => {
+const Account = ({ isLoggedIn }) => {
   const { id } = useParams();
   // const [param, setParam] = useState("");
   // useEffect(()=>{
   //   setParam(id);
   // }, id)
+  const navigate = useNavigate();
+  useEffect(() => {
+    isLoggedIn && navigate("/");
+  }, [isLoggedIn]);
+
   return (
     <>
       <AccountTop styles={styles} />
@@ -25,15 +30,37 @@ const Account = () => {
             gap: "15px",
           }}
         >
-          <Link to="/account/signUp">signUp</Link>
-          <Link to="/account/signIn">signIn</Link>
-          <Link to="/account/findPassword">findPassword</Link>
-          <Link to="/account/findAccount">findAccount</Link>
+          <Link
+            to="/account/signIn"
+            style={{ color: "white", padding: "10px 3px" }}
+          >
+            로그인
+          </Link>
+          <Link
+            to="/account/signUp"
+            style={{ color: "white", padding: "10px 3px" }}
+          >
+            회원가입
+          </Link>
+          <Link
+            to="/account/findPassword"
+            style={{ color: "white", padding: "10px 3px" }}
+          >
+            비밀번호찾기
+          </Link>
+          <Link
+            to="/account/findAccount"
+            style={{ color: "white", padding: "10px 3px" }}
+          >
+            아이디찾기
+          </Link>
         </div>
-        {id == "signIn" && <SignIn styles={styles} />}
-        {id == "signUp" && <SignUp styles={styles} />}
-        {id == "findPassword" && <FindPassword styles={styles} />}
-        {id == "findAccount" && <FindAccount styles={styles} />}
+        <div className={`${styles.inner} inner`}>
+          {id == "signIn" && <SignIn styles={styles} />}
+          {id == "signUp" && <SignUp styles={styles} />}
+          {id == "findPassword" && <FindPassword styles={styles} />}
+          {id == "findAccount" && <FindAccount styles={styles} />}
+        </div>
       </div>
     </>
   );
