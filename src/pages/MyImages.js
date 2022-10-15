@@ -3,7 +3,7 @@ import styles from "scss/MyImages.module.scss";
 import { Link } from "react-router-dom";
 import Image from "components/Image";
 const MyImages = ({ userImages }) => {
-  const [clicked, setClicked] = useState([]);
+  const [clickedItems, setClickedItems] = useState([]);
   return (
     <div id={styles.MyImages}>
       <div className="inner">
@@ -18,14 +18,15 @@ const MyImages = ({ userImages }) => {
                 <h4 className={styles.date}>{v.date}</h4>
                 <ul className={styles.list}>
                   {v.image.map((img, idx) => {
+                    const clicked = clickedItems.includes(img.id);
                     return (
                       <Image
                         styles={styles}
                         key={img.id}
-                        date={v.date}
                         img={img}
+                        clickedItems={clickedItems}
+                        setClickedItems={setClickedItems}
                         clicked={clicked}
-                        setClicked={setClicked}
                       />
                     );
                   })}
@@ -33,7 +34,7 @@ const MyImages = ({ userImages }) => {
               </div>
             );
           })}
-          <button className={styles.btnPrint}>{clicked.length}</button>
+          <button className={styles.btnPrint}>{clickedItems.length}</button>
         </div>
       </div>
     </div>
