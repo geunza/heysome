@@ -1,33 +1,20 @@
 import React, { useState } from "react";
 
-const Image = ({ styles, img, clicked, setClicked, date }) => {
-  const [border, setBorder] = useState(false);
-  const imgClick = (e) => {
-    setBorder((prev) => !prev);
-    let id = img.id;
-    let data = { id, date };
-    let exist = clicked.findIndex((el, idx) => {
-      return el.id == data.id;
-    });
-    if (exist >= 0) {
-      setClicked((prev) => {
-        let copy = [...prev];
-        copy.splice(exist, 1);
-        return copy;
-      });
-      //target.style.backgroundColor = "#ebdd02";
-    } else {
-      setClicked((prev) => [data, ...prev]);
-      //target.style.backgroundColor = "";
-    }
+const Image = ({ styles, img, clickedItems, setClickedItems, clicked }) => {
+  const handleClick = (id) => {
+    clickedItems.includes(id)
+      ? setClickedItems((prev) => prev.filter((e) => e != id))
+      : setClickedItems((prev) => [...prev, id]);
   };
   return (
     <li
       className={styles.listItem}
-      key={img.id}
-      style={{ backgroundColor: border ? "#fff" : "" }}
+      onClick={(e) => {
+        handleClick(img.id);
+      }}
+      data-clicked={clicked}
     >
-      <div className={`${styles.imgArea}`} onClick={imgClick}>
+      <div className={`${styles.imgArea}`}>
         <img src={require(`../${img.src}`)} alt={img.id} />
       </div>
     </li>
