@@ -116,6 +116,12 @@
     color: #ffffff;
     letter-spacing: 1px;
   }
+  button {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #767676;
+    background: transparent;
+  }
   #signIn {
     .autoSignIn {
       margin-top: 10px;
@@ -239,6 +245,36 @@
           color: #797979;
           font-size: 12px;
           padding: 5px 0 5px 30px;
+        }
+      }
+    }
+    form {
+      height: 100%;
+      fieldset {
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        .btnSubmit {
+          margin: auto auto 0;
+          color: #000000;
+          background: #ebdd02;
+          display: block;
+          text-align: center;
+          line-height: 45px;
+          border-radius: 30px;
+          font-weight: 500;
+          font-size: 16px;
+          width: 100%;
+          border: none;
+        }
+        .btnAuth {
+          display: block;
+          text-align: center;
+          line-height: 40px;
+          color: #ebdd02;
+          border: 1px solid #ebdd02;
+          border-radius: 50px;
+          margin-top: 15px;
         }
       }
     }
