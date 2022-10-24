@@ -3,60 +3,93 @@
     {
       "date": "2022-10-17",
       "image": [
-        { "id": "id.1", "src": "assets/dummy/myImages/myImage_01.png" },
-        { "id": "id.2", "src": "assets/dummy/myImages/myImage_02.png" }
+        { "id": "id.1", "src": "/public_assets/img/dummy/myImages/myImage_01.png" },
+        { "id": "id.2", "src": "/public_assets/img/dummy/myImages/myImage_02.png" }
       ]
     },
     {
       "date": "2022-10-16",
       "image": [
-        { "id": "id.3", "src": "assets/dummy/myImages/myImage_01.png" },
-        { "id": "id.4", "src": "assets/dummy/myImages/myImage_02.png" },
-        { "id": "id.5", "src": "assets/dummy/myImages/myImage_02.png" },
-        { "id": "id.6", "src": "assets/dummy/myImages/myImage_02.png" }
+        { "id": "id.3", "src": "/public_assets/img/dummy/myImages/myImage_01.png" },
+        { "id": "id.4", "src": "/public_assets/img/dummy/myImages/myImage_02.png" },
+        { "id": "id.5", "src": "/public_assets/img/dummy/myImages/myImage_02.png" },
+        { "id": "id.6", "src": "/public_assets/img/dummy/myImages/myImage_02.png" }
       ]
     },
     {
       "date": "2022-10-14",
       "image": [
-        { "id": "id.7", "src": "assets/dummy/myImages/myImage_01.png" },
-        { "id": "id.8", "src": "assets/dummy/myImages/myImage_01.png" },
-        { "id": "id.9", "src": "assets/dummy/myImages/myImage_02.png" }
+        { "id": "id.7", "src": "/public_assets/img/dummy/myImages/myImage_01.png" },
+        { "id": "id.8", "src": "/public_assets/img/dummy/myImages/myImage_01.png" },
+        { "id": "id.9", "src": "/public_assets/img/dummy/myImages/myImage_02.png" }
       ]
     },
     {
       "date": "2022-10-12",
       "image": [
-        { "id": "id.10", "src": "assets/dummy/myImages/myImage_01.png" },
-        { "id": "id.11", "src": "assets/dummy/myImages/myImage_01.png" },
-        { "id": "id.12", "src": "assets/dummy/myImages/myImage_01.png" },
-        { "id": "id.13", "src": "assets/dummy/myImages/myImage_02.png" }
+        {
+          "id": "id.10",
+          "src": "/public_assets/img/dummy/myImages/myImage_01.png"
+        },
+        {
+          "id": "id.11",
+          "src": "/public_assets/img/dummy/myImages/myImage_01.png"
+        },
+        {
+          "id": "id.12",
+          "src": "/public_assets/img/dummy/myImages/myImage_01.png"
+        },
+        { "id": "id.13", "src": "/public_assets/img/dummy/myImages/myImage_02.png" }
       ]
     },
     {
       "date": "2022-10-11",
       "image": [
-        { "id": "id.14", "src": "assets/dummy/myImages/myImage_01.png" },
-        { "id": "id.15", "src": "assets/dummy/myImages/myImage_01.png" },
-        { "id": "id.16", "src": "assets/dummy/myImages/myImage_02.png" }
+        {
+          "id": "id.14",
+          "src": "/public_assets/img/dummy/myImages/myImage_01.png"
+        },
+        {
+          "id": "id.15",
+          "src": "/public_assets/img/dummy/myImages/myImage_01.png"
+        },
+        { "id": "id.16", "src": "/public_assets/img/dummy/myImages/myImage_02.png" }
       ]
     },
     {
       "date": "2022-10-10",
       "image": [
-        { "id": "id.17", "src": "assets/dummy/myImages/myImage_01.png" },
-        { "id": "id.18", "src": "assets/dummy/myImages/myImage_01.png" },
-        { "id": "id.19", "src": "assets/dummy/myImages/myImage_01.png" },
-        { "id": "id.20", "src": "assets/dummy/myImages/myImage_02.png" }
+        {
+          "id": "id.17",
+          "src": "/public_assets/img/dummy/myImages/myImage_01.png"
+        },
+        {
+          "id": "id.18",
+          "src": "/public_assets/img/dummy/myImages/myImage_01.png"
+        },
+        {
+          "id": "id.19",
+          "src": "/public_assets/img/dummy/myImages/myImage_01.png"
+        },
+        { "id": "id.20", "src": "/public_assets/img/dummy/myImages/myImage_02.png" }
       ]
     },
     {
       "date": "2022-10-08",
       "image": [
-        { "id": "id.20", "src": "assets/dummy/myImages/myImage_01.png" },
-        { "id": "id.21", "src": "assets/dummy/myImages/myImage_01.png" },
-        { "id": "id.22", "src": "assets/dummy/myImages/myImage_01.png" },
-        { "id": "id.23", "src": "assets/dummy/myImages/myImage_02.png" }
+        {
+          "id": "id.20",
+          "src": "/public_assets/img/dummy/myImages/myImage_01.png"
+        },
+        {
+          "id": "id.21",
+          "src": "/public_assets/img/dummy/myImages/myImage_01.png"
+        },
+        {
+          "id": "id.22",
+          "src": "/public_assets/img/dummy/myImages/myImage_01.png"
+        },
+        { "id": "id.23", "src": "/public_assets/img/dummy/myImages/myImage_02.png" }
       ]
     }
   ]

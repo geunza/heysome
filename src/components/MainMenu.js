@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import logo from "assets/img/logo_black.png";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
@@ -34,7 +33,10 @@ const MainMenu = ({ menuOpen, styles }) => {
           </button>
           <div className={styles.headerLogo}>
             <Link to="/">
-              <img src={logo} alt="HEYSOME LOGO" />
+              <img
+                src={process.env.PUBLIC_URL + "/public_assets/logo_black.png"}
+                alt="HEYSOME LOGO"
+              />
             </Link>
           </div>
         </div>

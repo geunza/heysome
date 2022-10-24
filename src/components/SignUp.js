@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 const SignUp = ({ styles }) => {
+  const navigate = useNavigate();
+
   const data = [
     {
       id: 0,
@@ -50,6 +53,7 @@ const SignUp = ({ styles }) => {
       alert("핸드폰 인증을 해주세요.");
     } else if (step == 2) {
       alert("회원가입 전송");
+      navigate("/");
     }
   };
   const requiredCheck = (arr1, arr2) => {
@@ -76,8 +80,13 @@ const SignUp = ({ styles }) => {
     }
   };
   const authPhone = () => {
-    alert("핸드폰 인증");
-    setStep(2);
+    alert("핸드폰 인증 시작");
+    if (1) {
+      alert("인증 성공");
+      setStep(2);
+    } else {
+      alert("인증 실패");
+    }
   };
   return (
     <>

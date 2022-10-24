@@ -15,7 +15,7 @@ const Image = ({ styles, img, clickedItems, setClickedItems, clicked }) => {
       data-clicked={clicked}
     >
       <div className={`${styles.imgArea}`}>
-        <img src={require(`../${img.src}`)} alt={img.id} />
+        <img src={`${img.src}`} alt={img.id} />
       </div>
     </li>
   );

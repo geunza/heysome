@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import styles from "scss/findAccount.scss";
 const FindAccount = ({ styles }) => {
   const [userName, setUserName] = useState("");
   const [userNumber, setUserNumber] = useState("");
@@ -15,7 +15,7 @@ const FindAccount = ({ styles }) => {
     const {
       target: { value },
     } = e;
-    console.log(value);
+    setAuthType(value);
   };
   const submitFindAccount = (e) => {
     e.preventDefault();
@@ -27,19 +27,40 @@ const FindAccount = ({ styles }) => {
           <span>아이디찾기</span>
         </h2>
         <div className="authType">
-          <button type="button" value="phone" className="tabBtn">
+          <button
+            type="button"
+            value="phone"
+            className="tabBtn"
+            onClick={authTypeChange}
+          >
             휴대폰인증
           </button>
-          <button type="button" value="email" className="tabBtn">
+          <button
+            type="button"
+            value="email"
+            className="tabBtn"
+            onClick={authTypeChange}
+          >
             이메일인증
           </button>
         </div>
         <form onSubmit={submitFindAccount}>
-          <fieldset>
-            <button type="submit" className={styles.btnSubmit}>
-              인증번호 받기
-            </button>
-          </fieldset>
+          {authType == "phone" ? (
+            <fieldset>
+              <input type="text" name="name" id="name" placeholder="이름" />
+              <input
+                type="text"
+                name="number"
+                id="number"
+                placeholder="휴대폰번호"
+              />
+              <button type="submit" className={styles.btnSubmit}>
+                인증번호 받기
+              </button>
+            </fieldset>
+          ) : (
+            <div className="findEmail"></div>
+          )}
         </form>
       </div>
     </>

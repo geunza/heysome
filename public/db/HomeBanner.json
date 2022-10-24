@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "link": "/photo",
+      "img": "/public_assets/img/Home/banner_01.png",
+      "alt": "Banner Image1"
+    },
+    {
+      "link": "/photo",
+      "img": "/public_assets/img/Home/banner_02.png",
+      "alt": "Banner Image2"
+    },
+    {
+      "link": "/photo",
+      "img": "/public_assets/img/Home/banner_03.png",
+      "alt": "Banner Image3"
+    },
+    {
+      "link": "/photo",
+      "img": "/public_assets/img/Home/banner_04.png",
+      "alt": "Banner Image4"
+    },
+    {
+      "link": "/photo",
+      "img": "/public_assets/img/Home/banner_05.png",
+      "alt": "Banner Image5"
+    },
+    {
+      "link": "/photo",
+      "img": "/public_assets/img/Home/banner_06.png",
+      "alt": "Banner Image6"
+    }
+  ]
+}

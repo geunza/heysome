@@ -7,15 +7,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 const Home = () => {
   const [banner, setBanner] = useState([]);
+  const getBanner = async () => {
+    let json = await (await fetch("/db/HomeBanner.json")).json();
+    setBanner(json.data);
+  };
   useEffect(() => {
-    setBanner([
-      { link: "/photo", img: "banner_01.png", alt: "Banner Image1" },
-      { link: "/photo", img: "banner_02.png", alt: "Banner Image2" },
-      { link: "/photo", img: "banner_03.png", alt: "Banner Image3" },
-      { link: "/photo", img: "banner_04.png", alt: "Banner Image4" },
-      { link: "/photo", img: "banner_05.png", alt: "Banner Image5" },
-      { link: "/photo", img: "banner_06.png", alt: "Banner Image6" },
-    ]);
+    getBanner();
   }, []);
   return (
     <div id="Home">
@@ -35,7 +32,7 @@ const Home = () => {
           return (
             <SwiperSlide key={v.img} className={`${styles.swiperSlide}`}>
               <Link to={`${v.link}`}>
-                <img src={require(`assets/img/Home/${v.img}`)} alt={v.alt} />
+                <img src={v.img} alt={v.alt} />
               </Link>
             </SwiperSlide>
           );

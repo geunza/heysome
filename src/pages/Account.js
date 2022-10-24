@@ -7,7 +7,7 @@ import FindPassword from "components/FindPassword";
 import FindAccount from "components/FindAccount";
 import styles from "scss/Account.module.scss";
 const Account = ({ isLoggedIn }) => {
-  const { id } = useParams();
+  const { account } = useParams();
   // const [param, setParam] = useState("");
   // useEffect(()=>{
   //   setParam(id);
@@ -43,23 +43,23 @@ const Account = ({ isLoggedIn }) => {
             회원가입
           </Link>
           <Link
-            to="/account/findPassword"
-            style={{ color: "white", padding: "10px 3px" }}
-          >
-            비밀번호찾기
-          </Link>
-          <Link
             to="/account/findAccount"
             style={{ color: "white", padding: "10px 3px" }}
           >
             아이디찾기
           </Link>
+          <Link
+            to="/account/findPassword"
+            style={{ color: "white", padding: "10px 3px" }}
+          >
+            비밀번호찾기
+          </Link>
         </div>
         <div className={`${styles.inner} inner`}>
-          {id == "signIn" && <SignIn styles={styles} />}
-          {id == "signUp" && <SignUp styles={styles} />}
-          {id == "findPassword" && <FindPassword styles={styles} />}
-          {id == "findAccount" && <FindAccount styles={styles} />}
+          {account == "signIn" && <SignIn styles={styles} />}
+          {account == "signUp" && <SignUp styles={styles} />}
+          {account == "findAccount" && <FindAccount styles={styles} />}
+          {account == "findPassword" && <FindPassword styles={styles} />}
         </div>
       </div>
     </>

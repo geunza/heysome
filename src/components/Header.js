@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link, Navigate, useNavigate, useLocation } from "react-router-dom";
 import MainMenu from "components/MainMenu";
 import styles from "scss/Header.module.scss";
-import logo from "assets/img/logo_black.png";
 const Header = ({ isLoggedIn, setHeaderOn, headerOn }) => {
   const navigate = useNavigate();
   const path = useLocation().pathname.split("/")[1];
@@ -46,7 +45,10 @@ const Header = ({ isLoggedIn, setHeaderOn, headerOn }) => {
           </button>
           <div className={styles.headerLogo}>
             <Link to="/" className={styles.ABCD}>
-              <img src={logo} alt="HEYSOME LOGO" />
+              <img
+                src={process.env.PUBLIC_URL + "/public_assets/logo_black.png"}
+                alt="HEYSOME LOGO"
+              />
             </Link>
           </div>
         </div>
